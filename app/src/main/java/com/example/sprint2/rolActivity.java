@@ -23,17 +23,17 @@ public class rolActivity extends AppCompatActivity implements View.OnClickListen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rol);
         btn1=findViewById(R.id.btnEst);
-/*
+
         btn2.findViewById(R.id.btnFun);
-*/
+
         contexto1=getApplicationContext();
 
         btn1.setOnClickListener(informacionActivity);
 
         /*pii2*/
-/*
-        btn2.setOnClickListener(listaAlumnos);
-*/
+
+        btn2.setOnClickListener(activityHistorial);
+
 
         /*pii2*/
     }
@@ -49,15 +49,15 @@ public class rolActivity extends AppCompatActivity implements View.OnClickListen
     };
     /*pii3*/
 
-/*
-    private View.OnClickListener listaAlumnos=new View.OnClickListener() {
+
+    private View.OnClickListener activityHistorial=new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Intent int4= new Intent(contexto2, listaAlumnos.class);
+            Intent int4= new Intent(contexto2, activityHistorial.class);
             startActivity(int4);
         }
     };
-*/
+
 
     /*pif3*/
 }
